@@ -128,6 +128,7 @@
     }
     .navbar{
         flex-direction: column;
+        width: 97%;
     }
     .social-medias{
         margin-top: 1.5rem;
@@ -136,9 +137,16 @@
     .instagram,
     .twitter,
     .facebook{
-        font-size: 2rem !important;
+        font-size: 2.1rem !important;
         margin-left: 10px;
         margin-right: 10px;
     }
-
+    .light-mode,
+    .dark-mode{
+        font-size: 1.5rem !important;
+    }
+    .noticebar-marquee{
+        width: 95%;
+        font-size: 1rem;
+    }
 }
