@@ -2,8 +2,8 @@ import React,{useState} from 'react'
 import "./LiveRadio.css"
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
-import EqualizerIcon from '@mui/icons-material/Equalizer';
-
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import ArticleIcon from '@mui/icons-material/Article';
 function LiveRadio() {
   const lists=[
     {
@@ -120,6 +120,8 @@ function LiveRadio() {
     //console.log(generalBodyCoord.y);
     if(window.scrollY>generalBodyCoord.y){
       document.querySelector(".bottom-player-con").style.display="block" ;
+    }else if(document.querySelector(".lyrics-area").style.display==="block"){
+      document.querySelector(".bottom-player-con").style.display="block" ;
     }else{
       document.querySelector(".bottom-player-con").style.display="none" ;
     }
@@ -130,6 +132,16 @@ function LiveRadio() {
   }
   const progressToggleOff=function(){
     document.querySelector(".progress-toggle").style.display="none";
+  }
+  const lyricsOpen=function(){
+    document.querySelector(".live-radio").style.display="none";
+    document.querySelector(".lyrics-area").style.display="block";
+    document.querySelector(".bottom-player-con").style.display="block";
+  }
+  const lyricsClose=function(){
+    document.querySelector(".live-radio").style.display="flex";
+    document.querySelector(".lyrics-area").style.display="none";
+    document.querySelector(".bottom-player-con").style.display="none";
   }
   /*
   const textSliderLeft=function(){
@@ -167,51 +179,105 @@ function LiveRadio() {
   }*/
   return (
     <div className='live-radio-container'>
-      
-      <div  className='live-radio'>
-        
-        <div className='music-photo'>
-          <a href='https://www.youtube.com/watch?v=4NRXx6U8ABQ' >
-            <img className='music-photo-img' src={"https://cdn.shopify.com/s/files/1/0024/9803/5810/products/439339-Product-0-I-637501847347187012_800x800.jpg?v=1614548399"} alt="Görsel Bulunmamaktadır" />
-          </a>
+      <div className='lyrics-area'>
+        <div className='close-lyrics-area' onClick={lyricsClose}>
           
+          <KeyboardArrowDownIcon className='close-lyrics-area-icon'/>
+          <span className='lyrics-header'>Şarkı Sözleri</span>
         </div>
-        <div className='music-description'>
-          <div className='music-status'>
-            Şu anda çalan
-          </div>
-          <div className='name-artist' onClick={decrementCount} >
-            Justin Bieber
-          </div>
-          <div className='name-music' >
-            Beauty And A Beat
-          </div>
-          <div className='progress-bar' onMouseMove={progressToggleOn} onMouseLeave={progressToggleOff}>
-            <div className='progress-back' >
-              <div className='progress-now' onMouseMove={progressToggleOn} onMouseLeave={progressToggleOff}></div>
-              <div className='progress-toggle'>17:20</div>
-            </div>
-            <div className='live-now'>
-                <div className='live-bound'></div>
-                <div className='live-txt'>live</div>
-            </div>
-          </div>
-          <div className='player-buttons'>
-            <div className='equalizer-button'>
-              <EqualizerIcon className='equalizerIcon'/>
-            </div>
-            <div className='play-button'>
-              <PlayCircleIcon className='playIcon'/>
-            </div>
-            <div className='voice-button'>
-              <VolumeUpIcon className='voiceIcon'/>
-            </div>
+        <div className='lyrics-area-text'>
+          Bildiği gibi değilmiş buralar, o her şeyi mor severmiş.
+          Kim girse hayatına "seni seviyorum" der ve gidermiş.
+          Kalbi kırılmış bir kadın, belki de saçları ondan kısaymış.
+          Konuşulacak şeyler varmış daha, ama avazı çoktan çıkmış.
+          İşte bu yüzden leş gibidir buralar,
+          İyi ve güzel kadınlar hep ağlar.
+          Zor be kadın ama sen dur bakalım,
+          Yakında yeni bir gezegen bulunur nasıl olsa.
+          İnce ince doğranmış herkese bi parça dağılmış.
+          Sıradan hayalleri varmış ama hepsi ondan alınmış.
+          Kalbi kırılmış bir kadın,
+          Ve hiç zamanı olmamış alışmaya.
+          Yaşamak bir meslektir buralarda,
+          Zaten inancı kalmamış mutlu sonlara.
+          İşte bu yüzden leş gibidir buralar,
+          İyi ve güzel kadınlar hep ağlar.
+          Zor be kadın ama sen dur bakalım,
+          Yakında yeni bir gezegen bulunur nasıl olsa.
+          İşte bu yüzden leş gibidir buralar,
+          İyi ve güzel kadınlar hep ağlar.
+          Zor be kadın ama sen dur bakalım,
+          Yakında yeni bir gezegen bulunur nasıl olsa.
+          Bildiği gibi değilmiş buralar, o her şeyi mor severmiş.
+          Kim girse hayatına "seni seviyorum" der ve gidermiş.
+          Kalbi kırılmış bir kadın, belki de saçları ondan kısaymış.
+          Konuşulacak şeyler varmış daha, ama avazı çoktan çıkmış.
+          İşte bu yüzden leş gibidir buralar,
+          İyi ve güzel kadınlar hep ağlar.
+          Zor be kadın ama sen dur bakalım,
+          Yakında yeni bir gezegen bulunur nasıl olsa.
+          İnce ince doğranmış herkese bi parça dağılmış.
+          Sıradan hayalleri varmış ama hepsi ondan alınmış.
+          Kalbi kırılmış bir kadın,
+          Ve hiç zamanı olmamış alışmaya.
+          Yaşamak bir meslektir buralarda,
+          Zaten inancı kalmamış mutlu sonlara.
+          İşte bu yüzden leş gibidir buralar,
+          İyi ve güzel kadınlar hep ağlar.
+          Zor be kadın ama sen dur bakalım,
+          Yakında yeni bir gezegen bulunur nasıl olsa.
+          İşte bu yüzden leş gibidir buralar,
+          İyi ve güzel kadınlar hep ağlar.
+          Zor be kadın ama sen dur bakalım,
+          Yakında yeni bir gezegen bulunur nasıl olsa.
+        </div>
+        
+      </div>
+      <div className='live-radio-area'>
+        <div  className='live-radio'>
+          
+          <div className='music-photo'>
+            <a href='https://www.youtube.com/watch?v=4NRXx6U8ABQ' >
+              <img className='music-photo-img' src={"https://cdn.shopify.com/s/files/1/0024/9803/5810/products/439339-Product-0-I-637501847347187012_800x800.jpg?v=1614548399"} alt="Görsel Bulunmamaktadır" />
+            </a>
             
           </div>
-        </div>
+          <div className='music-description'>
+            <div className='music-status'>
+              Şu anda çalan
+            </div>
+            <div className='name-artist' onClick={decrementCount} >
+              Justin Bieber
+            </div>
+            <div className='name-music' >
+              Beauty And A Beat
+            </div>
+            <div className='progress-bar' onMouseMove={progressToggleOn} onMouseLeave={progressToggleOff}>
+              <div className='progress-back' >
+                <div className='progress-now' onMouseMove={progressToggleOn} onMouseLeave={progressToggleOff}></div>
+                <div className='progress-toggle'>17:20</div>
+              </div>
+              <div className='live-now'>
+                  <div className='live-bound'></div>
+                  <div className='live-txt'>live</div>
+              </div>
+            </div>
+            <div className='player-buttons'>
+              <div className='lyrics-button' >
+                <ArticleIcon className='lyricsIcon' onClick={lyricsOpen}/>
+              </div>
+              <div className='play-button'>
+                <PlayCircleIcon className='playIcon'/>
+              </div>
+              <div className='voice-button'>
+                <VolumeUpIcon className='voiceIcon'/>
+              </div>
+              
+            </div>
+          </div>
 
+        </div>
       </div>
-      
     </div>
   )
 }

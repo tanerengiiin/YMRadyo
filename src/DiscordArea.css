@@ -173,21 +173,19 @@
 }
 @media screen and (max-width: 400px){
     .discord{
-        width: 60%;
-        height: 39rem;
+        width: 65%;
+        height: 32rem;
         border-radius: 2.5rem;
     }
     .discord-area-header img{
-        width: 12rem;
-        margin-top: 0.5rem;
-    }
-    .discord-area-channel,
-    .discord-area-member{
-        font-size: 0.5rem;
-        padding: 0.4rem 0.8rem;
+        width: 10rem;
+        margin-top: 0.4rem;
     }
     .discord-message-area{
-        height: 25rem;
+        height: 24rem;
         overflow-y: scroll;
+    }
+    .dc-msg{
+        font-size: 0.95rem;
     }
 }

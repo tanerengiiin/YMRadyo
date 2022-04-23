@@ -149,4 +149,24 @@
         width: 120%;
         font-size: 1.1rem;
     }
+    #music-icon-1{
+        top: 2.3rem;
+        font-size: 2rem !important;
+    }
+    @keyframes music-icon-anm {
+        0% {
+        }
+        3%,8% {
+            top: 1.7rem;
+            font-size: 1.9rem !important;
+        }
+        5%,10% {
+            top: 2.3rem;
+            font-size: 1.8rem !important;
+        }
+        40% {
+          text-shadow: none;
+      }
+       
+    }
 }

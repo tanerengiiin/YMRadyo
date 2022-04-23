@@ -8,7 +8,21 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import RequestForm from './RequestForm';
 
 function App() {
-  
+  window.onload=function(){
+    setTimeout(() => {
+      const confirmBox=document.querySelector(".confirm-box");
+      confirmBox.style.display="block";
+      confirmBox.innerHTML="<div>İnceleme Bilgilendirmesi</div>";
+      setTimeout(() => {
+        confirmBox.innerHTML="";
+        confirmBox.innerHTML+="<div>En üstteki playerda sanatçı adına tıklayınca müzikler değişiyor.</div>";
+        setTimeout(() => {
+          confirmBox.style.display="none";
+        }, 8000);
+      }, 2000);  
+    }, 5000);
+    
+  }
   const requestFormOpen=function(){
     
     document.querySelector(".request-form-con-cover").style.display="block";
@@ -31,7 +45,8 @@ function App() {
       {/* Bottom Body*/}
       <BottomPlayer/>
       <div className='request-form-button' onClick={requestFormOpen}>
-        <FavoriteIcon className="request-form-icon" />
+        {/*<FavoriteIcon className="request-form-icon" />*/}
+        İstek Yap
       </div>
 
       <RequestForm/>

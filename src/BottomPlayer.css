@@ -4,7 +4,7 @@
 
 @keyframes bottom-player-fade {
     0%{
-        opacity: 0;
+        opacity: 0.8;
         bottom: -1rem;
     }100%{
         bottom: 0px;
@@ -23,6 +23,17 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
+}
+@keyframes bottomPlayerFade {
+    0%{
+        opacity: 0.2;
+        bottom: -2rem;
+    }100%{
+        opacity: 1;
+        bottom: 0;
+    }
+    
 }
 .dark-theme-on .bottom-player{
     background-color: #232528;

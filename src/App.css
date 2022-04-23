@@ -19,7 +19,7 @@ body{
     animation: confirm-box-anm 1s ease;
 }
 .confirm-box div{
-    background-color: rgb(82, 216, 114);
+    background-color: rgb(79, 197, 106);
     color: white;
     padding: 0.3rem 1rem;
     font-size: 0.8rem;
@@ -49,20 +49,19 @@ body{
     background-color: #61BDEE;
     position: fixed;
     z-index: 4;
-    bottom: 1rem;
-    right: 5rem;
+    bottom: 1.4rem;
+    right: 3rem;
     color: white;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50% 50% 0.5rem 50%;
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 8rem 8rem 1rem 8rem;
     -webkit-box-shadow: 0px 0.15rem 0.75rem 0.4rem #40b1ee41;
     box-shadow: 0px 0.15rem 0.75rem 0.4rem #40b1ee41;
     transition: all 0.2s ease;
 }
-.request-form-button:hover .request-form-icon{
-    font-size: 1.8rem !important;
+.request-form-button:hover {
+    font-size: 0.95rem;
     transition: all 0.1s ease-out;
 }
 .request-form-icon{
@@ -77,10 +76,14 @@ body{
         width: 100%;
     }
     .request-form-icon{
-        font-size: 2.5rem !important;
+        font-size: 2rem !important;
     }
     .request-form-button{
         padding: 1.5rem;
-        bottom: 7rem;
+        bottom: 8rem;
+        right: 3rem;
+    }
+    .confirm-box div{
+        font-size: 1rem;
     }
 }

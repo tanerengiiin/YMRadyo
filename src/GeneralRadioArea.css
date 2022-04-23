@@ -240,11 +240,6 @@
     .track-music{
         line-height:1.8rem;
     }
-    .track-request{
-        padding: 0.25rem 0.45rem;
-        border-radius: 0.4rem ;
-        font-size: 0.2rem ;
-    }
     .last-track{
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -257,42 +252,36 @@
     .general-radio-area{
         flex-direction: column;
     }
-    .discord-area{
-        height: 350px !important;
-        width: 60%;
-    }
     .last-5list{
-        width: 55%;
+        width: 65%;
         margin-bottom: 5rem;
     }
     .track-list-con{
-        width: 60%;
+        width: 70%;
         margin-bottom: 5rem;
+    }
+    .last-track-order{
+        font-size: 0.9rem;
+        
     }
     .track{
         margin-top: 2rem;
         margin-bottom: 2rem;
-        
-    }
-    .last-track-order{
-        font-size: 0.3rem;
-        
     }
     .track-img img{
         width: 4rem;
         height: 4rem;
     }
-    .track-artist,
-    .track-music{
-        line-height:1.8rem;
-    }
     .track-request{
-        padding: 0.25rem 0.45rem;
-        border-radius: 0.4rem ;
-        font-size: 0.2rem ;
+        padding: 0.3rem 0.5rem;
+        width: 10%;
+        font-weight: 400 ;
+        font-size: 1rem ;
     }
-    .last-track{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+    .track-artist{
+        line-height: 1rem;
+    }
+    .track-music{
+        line-height: 1rem;
     }
 }
