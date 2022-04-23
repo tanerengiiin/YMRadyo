@@ -104,7 +104,7 @@ function LiveRadio() {
   ];
   let[count,setCount]=useState(18);
   function decrementCount(){
-    if(count==-1){
+    if(count===-1){
       count=18;
     }
     setCount(count-1); 
