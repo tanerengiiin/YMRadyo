@@ -282,6 +282,14 @@
     .player-buttons{
         margin-top: 2.5rem;
     }
-
+    .voiceIcon{
+        font-size: 2.75rem !important;
+    }
+    .playIcon{
+        font-size: 4rem !important;
+    }
+    .equalizerIcon{
+        font-size: 2.75rem !important;
+    }
 
 }

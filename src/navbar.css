@@ -143,10 +143,10 @@
     }
     .light-mode,
     .dark-mode{
-        font-size: 1.5rem !important;
+        font-size: 1.75rem !important;
     }
     .noticebar-marquee{
-        width: 95%;
-        font-size: 1rem;
+        width: 120%;
+        font-size: 1.1rem;
     }
 }
