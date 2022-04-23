@@ -118,7 +118,7 @@
 }
 @media screen and (max-width: 400px) {
     html {
-      font-size: 6px;
+      font-size: 8px;
     }
     .logo-img{
         width: 10rem;
@@ -140,8 +140,6 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-    .noticebar-marquee{
-        font-size: 0.6rem;
-    }
+    
 
 }
