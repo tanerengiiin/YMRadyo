@@ -1,0 +1,147 @@
+.navbar{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 0.75rem;
+}
+.logo{
+    position: relative;
+}
+.logo-music-icon{
+    position: absolute;
+    color: #39a2e3;
+}
+#music-icon-1{
+    top: 2rem;
+    right: -0.45rem;
+    font-size: 1.8rem !important;
+    transform: rotate(-15deg);
+    transition: all 0.1s ease;
+    animation: music-icon-anm 8s ease infinite;
+    animation-delay:0s ;
+    animation-timing-function: linear;
+}
+@keyframes music-icon-anm {
+    0% {
+    }
+    3%,8% {
+        top: 1.6rem;
+        font-size: 1.9rem !important;
+    }
+    5%,10% {
+        top: 2rem;
+        font-size: 1.8rem !important;
+    }
+    40% {
+      text-shadow: none;
+  }
+   
+}
+.logo-img{
+    width: 7.4rem;
+}
+.noticebar{
+    background-color: #F7F7F7;
+    height: 2.25rem;
+    color: #707070;
+    width: 60%;
+    border-radius: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    
+}
+.dark-theme-on .noticebar{
+    background-color: #232528;
+    color: #cbcbcb;
+}
+.noticebar-marquee{
+    font-size: 0.75rem;
+}
+.social-medias{
+    display: flex;
+    align-items: center;
+}
+.social-medias div{
+    color: #283d48;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: all 0.05s ease;
+}
+.dark-theme-on .social-medias div{
+    color: #FFFFFF;
+}
+.social-medias div:hover{
+    color: #3CA9EE;
+}
+
+.instagram,
+.twitter,
+.facebook{
+    font-size: 1.4rem !important;
+}
+.instagram:hover,
+.twitter:hover,
+.facebook:hover{
+    font-size: 1.6rem !important;
+    transition: all 0.15s ease;
+}
+.light-mode,
+.dark-mode{
+    font-size: 1.3rem !important;
+}
+.light-mode:hover,
+.dark-mode:hover{
+    font-size: 1.5rem !important;
+    transition: all 0.15s ease;
+}
+.light-theme{
+    display: none;
+}
+.light-mode{
+    background-color: #232528;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 0.2rem 0.3rem;
+}
+.dark-theme{
+    display: block;
+}
+.dark-mode{
+    background-color: #ececec;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 0.2rem 0.3rem;
+}
+@media screen and (max-width: 400px) {
+    html {
+      font-size: 6px;
+    }
+    .logo-img{
+        width: 10rem;
+    }
+    .noticebar{
+        font-size: 0.2rem;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .social-medias{
+        margin-top: 1.5rem;
+        
+    }
+    .instagram,
+    .twitter,
+    .facebook{
+        font-size: 2rem !important;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .noticebar-marquee{
+        font-size: 0.6rem;
+    }
+
+}

@@ -1,0 +1,86 @@
+*{
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 20px;
+}
+body{
+    overflow-x: hidden;
+}
+.App{
+    position: relative;
+}
+.confirm-box{
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 5;
+    animation: confirm-box-anm 1s ease;
+}
+.confirm-box div{
+    background-color: rgb(82, 216, 114);
+    color: white;
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+@keyframes confirm-box-anm {
+    0%{
+        opacity: 0;
+        top: -1rem;
+    }100%{
+        opacity: 1;
+        top: 1rem;
+    }
+    
+}
+.body-cover{
+    top: 0;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    background-color: #16293373;
+}
+.request-form-button{
+    cursor: pointer;
+    background-color: #61BDEE;
+    position: fixed;
+    z-index: 4;
+    bottom: 1rem;
+    right: 5rem;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% 50% 0.5rem 50%;
+    -webkit-box-shadow: 0px 0.15rem 0.75rem 0.4rem #40b1ee41;
+    box-shadow: 0px 0.15rem 0.75rem 0.4rem #40b1ee41;
+    transition: all 0.2s ease;
+}
+.request-form-button:hover .request-form-icon{
+    font-size: 1.8rem !important;
+    transition: all 0.1s ease-out;
+}
+.request-form-icon{
+    font-size: 1.5rem !important;
+}
+
+@media screen and (max-width: 400px) {
+    html {
+      font-size: 6px;
+    }
+    .App{
+        width: 100%;
+    }
+    .request-form-icon{
+        font-size: 2.5rem !important;
+    }
+    .request-form-button{
+        padding: 1.5rem;
+        bottom: 7rem;
+    }
+}

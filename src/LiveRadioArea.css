@@ -1,0 +1,113 @@
+.live-radio-area{
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+   
+}
+body{
+    overflow-x: hidden;
+}
+.last-music-card,
+.next-music-card{
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: #FAFAFA;
+    padding: 1rem 1.25rem;
+    -webkit-box-shadow: 0px 0px 1rem 8px rgba(71, 71, 71, 0.073);
+    box-shadow: 0px 0px 1rem 8px rgba(71, 71, 71, 0.073);
+    transition: all 0.5s ease;
+}
+.dark-theme-on .last-music-card,
+.dark-theme-on .next-music-card{
+    background-color: #232528;
+    -webkit-box-shadow: 0px 0px 1rem 8px rgba(58, 58, 58, 0.073);
+    box-shadow: 0px 0px 1rem 8px rgba(58, 58, 58, 0.073);
+}
+.last-music-card{
+    left: -6rem;
+    position: absolute;
+    transform: rotate(-90deg);
+    text-align: center;
+    animation: lastMusicCardFade 2.5s;
+}
+@keyframes lastMusicCardFade {
+    0%{
+        opacity: 0;
+        left: -8rem;
+    }100%{
+        opacity: 1;
+        left: -6rem;
+    }
+}
+.last-music-card:hover{
+    left: -2.25rem;
+}
+.next-music-card:hover{
+    right: -2.25rem;
+}
+.next-music-card{
+    right: -6rem;
+    position: absolute;
+    transform: rotate(-90deg);
+    text-align: center;
+    animation: nextMusicCardFade 2.5s;
+}
+@keyframes nextMusicCardFade {
+    0%{
+        opacity: 0;
+        right: -8rem;
+    }100%{
+        opacity: 1;
+        right: -6rem;
+    }
+}
+.last-music-card-header{
+    opacity: 0.9;
+    color: #6662C2;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.dark-theme-on .last-music-card-header{
+    color: #fffcfc;
+}
+.last-artist-card-name{
+    color: #6662C2;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.dark-theme-on .last-artist-card-name{
+    color: #fffcfc;
+}
+.last-music-card-name{
+    color: #4F42B5;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.dark-theme-on .last-music-card-name{
+    color: #fffcfc;
+}
+.next-music-card-header{
+    opacity: 0.9;
+    color: #3CA9EE;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.next-artist-card-name{
+    color: #3CA9EE;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.next-music-card-name{
+    color: #3CA9EE;
+    font-size: 1rem;
+    font-weight: 500;
+}
+@media screen and (max-width: 800px){
+    .last-music-card,
+    .next-music-card{
+        display: none;
+    }
+}

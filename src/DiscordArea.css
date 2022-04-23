@@ -1,0 +1,193 @@
+.discord{
+    width: 21%;
+    height: 22rem;
+    background-color: #f5f5f5;
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 0px 3px 1rem 8px rgba(61, 61, 61, 0.103);
+    box-shadow: 0px 3px 1rem 8px rgba(61, 61, 61, 0.103);
+    position: relative;
+}
+.dark-theme-on .discord{
+    background-color: #232528;
+}
+.discord-area-header{
+    text-align: center;
+}
+.discord-area-header img{
+    width: 6rem;
+    margin-top: -5rem;
+}
+.discord-area-info{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.discord-area-channel,
+.discord-area-member{
+    background-color: #E6E6E6;
+    color: #1C2C35;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+}
+.dark-theme-on .discord-area-channel,
+.dark-theme-on .discord-area-member{
+    background-color: #474747;
+    color: #DCDCDC;
+}
+.discord-invite-area{
+    width: 85%;
+    position: absolute;
+    bottom: 1rem;
+}
+.discord-send-message{
+    padding: 0.5rem 0.7rem;
+    background-color: #E6E6E6;
+    color: #1C2C35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    border-radius: 0.7rem;
+    opacity: 0.9;
+}
+.dark-theme-on .discord-send-message{
+    background-color: #474747;
+    color: #DCDCDC;
+}
+.discord-message-area{
+    height: 16rem;
+    overflow-y: scroll;
+}
+.discord-message-area::-webkit-scrollbar {
+    width: 0.4rem;
+}
+  
+  /* Track */
+.discord-message-area::-webkit-scrollbar-track {
+    background: #dfdfdf;
+    border-radius: 0.5rem;
+}
+  
+  /* Handle */
+.discord-message-area::-webkit-scrollbar-thumb {
+    background: #717679;
+    border-radius: 0.5rem;
+}
+  
+  /* Handle on hover */
+.discord-message-area::-webkit-scrollbar-thumb:hover {
+    background: #49545a;
+}
+.username{
+    color: #3CA9EE;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+.dc-msg{
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+    color: #1C2C35;
+}
+.dark-theme-on .dc-msg{
+    color: #DCDCDC;;
+}
+.discord-invite-button{
+    display: none;
+}
+.discord-invite-button a{
+    text-decoration: none;
+}
+.dc-invite-btn{
+    cursor: pointer;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.7rem;
+    background-color: #3CA9EE;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+    -webkit-box-shadow: 0px 2px 1rem 8px #53bafa1d ;
+    box-shadow: 0px 2px 1rem 8px #53bafa29 ;
+    transition: all 0.1s ease;
+    animation: dcInviteVibration 0.4s;
+
+}
+.dc-invite-btn:hover{
+    -webkit-box-shadow: 0px 3px 1.2rem 8px #53bafa4b ;
+    box-shadow: 0px 3px 1.2rem 8px #53bafa4b ;
+}
+@keyframes dcInviteVibration {
+    0%{
+        opacity: 0;
+        transform: rotate(3deg);
+        transform: translateX(0rem);
+    }10%{
+        transform: rotate(3deg);
+        transform: translateY(-0.3rem);
+    }20%{
+        transform: rotate(0deg);
+        transform: translateX(-0.3rem);
+    }30%{
+        transform: rotate(3deg);
+        transform: translateY(0.3rem);
+    }40%{
+        transform: rotate(3deg);
+        transform: translateX(0.3rem);
+    }50%{
+        transform: rotate(0deg);
+        transform: translateY(-0.3rem);
+    }60%{
+        transform: rotate(3deg);
+        transform: translateX(-0.3rem);
+    }70%{
+        transform: rotate(0deg);
+        transform: translateY(0.3rem);
+    }80%{
+        transform: rotate(3deg);
+        transform: translateX(0.3rem);
+    }90%{
+        transform: rotate(3deg);
+        transform: translateY(0rem);
+    }100%{
+        opacity: 1;
+        transform: rotate(0deg);
+        transform: translateX(0rem);
+    }
+    
+}
+@media screen and (max-width: 800px){
+    .discord{
+        width: 60%;
+        height: 32rem;
+        border-radius: 2.5rem;
+    } 
+    .discord-message-area{
+        height: 24rem;
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width: 400px){
+    .discord{
+        width: 60%;
+        height: 39rem;
+        border-radius: 2.5rem;
+    }
+    .discord-area-header img{
+        width: 12rem;
+        margin-top: 0.5rem;
+    }
+    .discord-area-channel,
+    .discord-area-member{
+        font-size: 0.5rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .discord-message-area{
+        height: 25rem;
+        overflow-y: scroll;
+    }
+}

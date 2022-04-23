@@ -1,0 +1,163 @@
+.bottom-player-con{
+    display: none;
+}
+
+@keyframes bottom-player-fade {
+    0%{
+        opacity: 0;
+        bottom: -1rem;
+    }100%{
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+.bottom-player{
+    z-index: 1;
+    height: 5rem;
+    background-color: #FAFAFA;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    -webkit-box-shadow: 0px -3px 20px 8px rgba(61, 61, 61, 0.135);
+    box-shadow: 0px -3px 20px 8px rgba(61, 61, 61, 0.135);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.dark-theme-on .bottom-player{
+    background-color: #232528;
+}
+.bottom-player-area{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bottom-player-buttons{
+    margin-right: 10rem;
+    display: flex;
+    align-items: center;
+    
+}
+.bottom-player-buttons div{
+    margin-left: 1.25rem;
+}
+.bottom-progress-bar{
+    position: absolute;
+    top: -0.3rem;
+    height: 0.4rem;
+    width: 100%;
+    background-color: #FEFEFE;
+}
+.dark-theme-on .bottom-progress-bar{
+    background-color: #383a3e;
+}
+.bottom-progress-status{
+    
+    height: 0.4rem;
+    width: 70%;
+    background-color: #6662C2;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.dark-theme-on .bottom-progress-status{
+    background-color: #eef9ff
+}
+.bottom-progress-live{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    color: #ff4242fc;
+}
+.bottom-progress-bound{
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: #ff4242fc;
+    border-radius: 2.5rem;
+    animation: live-fade 3s infinite;
+}
+.dark-theme-on .bottom-progress-bound{
+    animation: live-fade-dark 3s infinite;
+}
+.bottom-progress-txt{
+    margin-left: 0.5rem;
+}
+.current-music{
+    display: flex;
+}
+.current-music-img img{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.current-music-detail{
+    margin-left: 0.75rem;
+}
+.current-music-artist{
+    color: #3CA9EE;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.current-music-name{
+    color: #61BDEE;
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+.next-music{
+    display: flex;
+}
+.next-music-header{
+    color: #534FAE;
+    font-size: 0.55rem;
+    font-weight: 500;
+
+}
+.dark-theme-on .next-music-header{
+    color: white;
+}
+.next-music-img img{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.next-music-detail{
+    margin-left: 0.75rem;
+}
+.next-music-artist{
+    color: #3CA9EE;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+.next-music-name{
+    line-height: 0.5rem;
+    color: #61BDEE;
+    font-weight: 500;
+    font-size: 0.5rem;
+}
+@media screen and (max-width: 1300px){
+    html{
+        font-size:12px ;
+    }
+}
+@media screen and (max-width: 800px){
+    html{
+        font-size:9px ;
+    }
+}
+@media screen and (max-width: 400px) {
+    .bottom-player{
+        height: 6.5rem;
+    }
+    .next-music-artist{
+        font-size: 0.5rem !important;
+    }
+    .next-music-name{
+        font-size: 0.2rem !important;
+    }
+}
+

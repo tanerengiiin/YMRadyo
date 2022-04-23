@@ -1,0 +1,298 @@
+.general-radio-area{
+    margin-top: 12.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+}
+.discord-area{
+    width: 24%;
+    background-color: white ;
+}
+.dark-theme-on .discord-area{
+    background-color: #232528;
+}
+
+.last-5list{
+    width: 21%;
+    background-color: #f5f5f5;
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 0px 3px 1rem 8px rgba(61, 61, 61, 0.103);
+    box-shadow: 0px 3px 1rem 8px rgba(61, 61, 61, 0.103);
+}
+.dark-theme-on .last-5list{
+    background-color: #232528;
+    -webkit-box-shadow: 0px 3px 1rem 8px rgba(45, 45, 45, 0.103);
+    box-shadow: 0px 3px 1rem 8px rgba(45, 45, 45, 0.103);
+}
+.last-5list-header{
+    color: #6662C2;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom:1rem;
+}
+.dark-theme-on .last-5list-header{
+    color: #ffffff;
+}
+.last-track{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.last-track-order{
+    color: #707070;
+    font-weight: 600;
+    font-size: 0.6rem;
+    margin-right:0.5rem;
+}
+.dark-theme-on .last-track-order,
+.dark-theme-on .last-track-time{
+    color: #D4D4D4;
+}
+.last-track-img img{
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    opacity: 0.95;
+    margin-right: 0.5rem;
+}
+.last-track-detail{
+    margin-right: 0.9rem;
+}
+.last-track-artist{
+    color: #6662C2;
+    font-weight:600;
+    font-size: 0.65rem;
+}
+.dark-theme-on .last-track-artist{
+    color: white;
+}
+.last-track-music{
+    color: #534FAE;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+.dark-theme-on .last-track-music{
+    color: #61BDEE;
+}
+.last-track-time{
+    color: #707070;
+    font-weight: 500;
+    font-size: 0.6rem;
+    margin-left: auto;
+    margin-right: 0;
+}
+.track-list-con{
+    width: 27%;
+    background-color: #f5f5f5;
+    padding: 1.75rem 2.75rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 0px 3px 1rem 8px rgba(61, 61, 61, 0.103);
+    box-shadow: 0px 3px 1rem 8px rgba(61, 61, 61, 0.103);
+}
+.dark-theme-on .track-list-con{
+    background-color: #232528;
+    -webkit-box-shadow: 0px 3px 1rem 8px rgba(45, 45, 45, 0.103);
+    box-shadow: 0px 3px 1rem 8px rgba(45, 45, 45, 0.103);
+}
+.track-list-search{
+    
+    outline: none;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    font-family: "Poppins";
+    font-size: 0.9rem;
+    color: #3CA9EE;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.dark-theme-on .track-list-search{
+    background-color: #191A1C;
+}
+.track-list-search::placeholder{
+    color: #2b3d4880;
+    font-weight: 600;
+}
+.dark-theme-on .track-list-search::placeholder{
+    color: #bcbcbc;
+} 
+.track{
+    display: flex;
+    align-items: center;
+    margin-top: 0.65rem;
+    margin-bottom: 0.65rem;
+}
+.track-img img{
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    opacity: 0.95;
+    margin-right: 0.5rem;
+}
+.track-detail{
+    margin-right: 1rem;
+}
+.track-artist{
+    line-height: 1.25rem;
+    color: #61BDEE;
+    font-weight:600;
+    font-size: 0.8rem;
+}
+.dark-theme-on .track-artist{
+    color: #ffffff;
+}
+.track-music{
+    line-height: 1.25rem;
+    color: #3CA9EE;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.track-request{
+    text-align: center;
+    cursor: pointer;
+    background-color: #3CA9EE;
+    -webkit-box-shadow: 0px 2px 1rem 8px #53bafa37 ;
+    box-shadow: 0px 2px 1rem 8px #53bafa37 ;
+    color: white;
+    padding: 0.3rem 0.5rem;
+    width: 10%;
+    margin-left: auto ;
+    margin-right: 0 ;
+    border-radius: 0.5rem ;
+    text-transform: inherit ;
+    font-weight: 400 ;
+    font-size: 0.8rem ;
+    transition: all 0.2s ease;
+}
+.track-request:hover{
+    -webkit-box-shadow: 0px 3px 1.2rem 8px #53bafa7d ;
+    box-shadow: 0px 3px 1.2rem 8px #53bafa7d ;
+}
+
+.track-list-header{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.track-list-order{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-page-num{
+    background-color: rgb(239, 239, 239);
+    padding: 0.25rem 0.35rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: #1C2C35;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.dark-theme-on .list-page-num{
+    background-color: #191A1C;
+    color: #bcbcbc;
+}
+#page-one{
+    color: #3CA9EE;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.track-list-refresh-button{
+    cursor: pointer;
+    font-size: 1.5rem !important;
+    color: #3CA9EE;
+}
+@media screen and (max-width: 800px){
+    .general-radio-area{
+        flex-direction: column;
+    }
+    .last-5list{
+        width: 60%;
+        margin-bottom: 5rem;
+    }
+    .track-list-con{
+        width: 68%;
+        margin-bottom: 5rem;
+    }
+    .track{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+    }
+    .last-track-order{
+        font-size: 0.3rem;
+        
+    }
+    .track-img img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .track-artist,
+    .track-music{
+        line-height:1.8rem;
+    }
+    .track-request{
+        padding: 0.25rem 0.45rem;
+        border-radius: 0.4rem ;
+        font-size: 0.2rem ;
+    }
+    .last-track{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    html {
+      font-size: 6px;
+    }
+    .general-radio-area{
+        flex-direction: column;
+    }
+    .discord-area{
+        height: 350px !important;
+        width: 60%;
+    }
+    .last-5list{
+        width: 55%;
+        margin-bottom: 5rem;
+    }
+    .track-list-con{
+        width: 60%;
+        margin-bottom: 5rem;
+    }
+    .track{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+    }
+    .last-track-order{
+        font-size: 0.3rem;
+        
+    }
+    .track-img img{
+        width: 4rem;
+        height: 4rem;
+    }
+    .track-artist,
+    .track-music{
+        line-height:1.8rem;
+    }
+    .track-request{
+        padding: 0.25rem 0.45rem;
+        border-radius: 0.4rem ;
+        font-size: 0.2rem ;
+    }
+    .last-track{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
