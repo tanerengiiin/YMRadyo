@@ -5,7 +5,7 @@ function LastTrack() {
     <div className='last-track'>
         <div className='last-track-order'>1</div>
         <div className='last-track-img'>
-          <a href='#'>
+          <a href='https://discord.gg/d8WpuMdu'>
             <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjI9u7ZtVcN5fThv_ZMnfIimZYThhV7q7lnw&usqp=CAU"} alt='görsel yüklenemedi'/>
           </a>
         </div>

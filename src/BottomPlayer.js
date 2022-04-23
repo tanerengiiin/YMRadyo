@@ -17,7 +17,7 @@ function BottomPlayer() {
         <div className='bottom-player-area'>
             <div className='current-music'>
                 <div className='current-music-img'>
-                    <a href='#'>
+                    <a href='https://discord.gg/d8WpuMdu'>
                     <img src={"https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/9d/cb/77/9dcb7707-fe4b-bcda-6514-349b8a56769d/cover_4050215701229.jpg/1200x1200bf-60.jpg"} alt="görsel yok" />
                     </a>
                 </div>
@@ -42,7 +42,7 @@ function BottomPlayer() {
             
             <div className='next-music'>
                 <div className='next-music-img'>
-                    <a href='#'>
+                    <a href='https://discord.gg/d8WpuMdu'>
                         <img src={"https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/9d/cb/77/9dcb7707-fe4b-bcda-6514-349b8a56769d/cover_4050215701229.jpg/1200x1200bf-60.jpg"} alt="görsel yok" />
                     </a>
                 </div>

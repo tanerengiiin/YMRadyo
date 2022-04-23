@@ -33,7 +33,7 @@ function Navbar() {
     <div>
         <nav className='navbar'>
             <div className='logo'>
-                <a href='#'>
+                <a href='https://discord.gg/d8WpuMdu'>
                     <img className='logo-img' src={logo} alt='görsel yüklenemedi' />
                 </a>
                 <MusicNoteIcon className='logo-music-icon' id="music-icon-1"/>
@@ -48,19 +48,19 @@ function Navbar() {
             
             </div>
             <div className='social-medias'>
-            <a href='#'>
+            <a href='https://discord.gg/d8WpuMdu'>
                 <div className='instagram-div'>
                     
                     <InstagramIcon className='instagram'/>
                     
                 </div>
                 </a>
-                <a href='#'>
+                <a href='https://discord.gg/d8WpuMdu'>
                 <div className='twitter-div' >
                     <TwitterIcon className='twitter'/>
                 </div>
                 </a>
-                <a href='#'>
+                <a href='https://discord.gg/d8WpuMdu'>
                 <div className='facebook-dvi'>
                     <FacebookIcon className='facebook'/>
                 </div>
