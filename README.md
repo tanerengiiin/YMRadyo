@@ -1,4 +1,4 @@
-PROJECT WEBSITE LINK => tanerengiiin.github.io/YMRadyo
+PROJECT WEBSITE LINK => https://tanerengiiin.github.io/YMRadyo
 
 # Getting Started with Create React App
 
