@@ -118,7 +118,7 @@
 }
 @media screen and (max-width: 400px) {
     html {
-      font-size: 8px;
+      font-size: 10px;
     }
     .logo-img{
         width: 10rem;
@@ -140,6 +140,5 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-    
 
 }
