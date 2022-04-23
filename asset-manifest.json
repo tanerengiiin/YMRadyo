@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/YMRadyo/static/css/main.e2719484.css",
-    "main.js": "/YMRadyo/static/js/main.1678583e.js",
+    "main.css": "/YMRadyo/static/css/main.796356d6.css",
+    "main.js": "/YMRadyo/static/js/main.668056e1.js",
     "static/js/787.344094bd.chunk.js": "/YMRadyo/static/js/787.344094bd.chunk.js",
     "static/media/yazilimcimekani.png": "/YMRadyo/static/media/yazilimcimekani.8e3385cb59cbdf93ea34.png",
     "static/media/yazilimcimekanidark.png": "/YMRadyo/static/media/yazilimcimekanidark.0391891de85a26e3176a.png",
     "static/media/DiscordLogo.png": "/YMRadyo/static/media/DiscordLogo.c64a716e1315b6453df9.png",
     "static/media/DiscordLogoDark.png": "/YMRadyo/static/media/DiscordLogoDark.cc59f4a291dd7ad9367f.png",
     "index.html": "/YMRadyo/index.html",
-    "main.e2719484.css.map": "/YMRadyo/static/css/main.e2719484.css.map",
-    "main.1678583e.js.map": "/YMRadyo/static/js/main.1678583e.js.map",
+    "main.796356d6.css.map": "/YMRadyo/static/css/main.796356d6.css.map",
+    "main.668056e1.js.map": "/YMRadyo/static/js/main.668056e1.js.map",
     "787.344094bd.chunk.js.map": "/YMRadyo/static/js/787.344094bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2719484.css",
-    "static/js/main.1678583e.js"
+    "static/css/main.796356d6.css",
+    "static/js/main.668056e1.js"
   ]
 }
