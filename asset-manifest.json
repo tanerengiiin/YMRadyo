@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/YMRadyo/static/css/main.3e42171c.css",
+    "main.css": "/YMRadyo/static/css/main.48d6ab3a.css",
     "main.js": "/YMRadyo/static/js/main.1678583e.js",
     "static/js/787.344094bd.chunk.js": "/YMRadyo/static/js/787.344094bd.chunk.js",
     "static/media/yazilimcimekani.png": "/YMRadyo/static/media/yazilimcimekani.8e3385cb59cbdf93ea34.png",
@@ -8,12 +8,12 @@
     "static/media/DiscordLogo.png": "/YMRadyo/static/media/DiscordLogo.c64a716e1315b6453df9.png",
     "static/media/DiscordLogoDark.png": "/YMRadyo/static/media/DiscordLogoDark.cc59f4a291dd7ad9367f.png",
     "index.html": "/YMRadyo/index.html",
-    "main.3e42171c.css.map": "/YMRadyo/static/css/main.3e42171c.css.map",
+    "main.48d6ab3a.css.map": "/YMRadyo/static/css/main.48d6ab3a.css.map",
     "main.1678583e.js.map": "/YMRadyo/static/js/main.1678583e.js.map",
     "787.344094bd.chunk.js.map": "/YMRadyo/static/js/787.344094bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e42171c.css",
+    "static/css/main.48d6ab3a.css",
     "static/js/main.1678583e.js"
   ]
 }
