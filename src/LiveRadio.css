@@ -264,6 +264,7 @@
         flex-direction: column;
         padding-bottom: 1.5rem;
         padding: 2.2rem 2rem;
+        min-width: 0rem;
     }
     
     .music-photo img{
